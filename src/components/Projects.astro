@@ -39,6 +39,12 @@ const PROJECTS = [
 ---
 
 <div class="flex flex-col gap-y-16">
+  <!-- button toggle projects -->
+  <div class="flex bg-red-500 w-[10rem] h-[4rem]">
+    <p>Front End</p>
+    <p>Back End</p>
+    <p>Full Stack</p>
+  </div>
   {
     PROJECTS.map(({ image, title, description, tags, link, github }) => (
     <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">

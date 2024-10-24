@@ -1,9 +1,9 @@
 ---
-const personalImageAlt = "Miguel Ángel"
-import Badge from "../components/Badge.astro"
-import LinkedInIcon from "../components/icons/LinkedIn.astro"
-import MailIcon from "../components/icons/Mail.astro"
-import SocialPill from "../components/SocialPill.astro"
+const personalImageAlt = "Miguel Ángel";
+import Badge from "./Badge.astro";
+import LinkedInIcon from "./icons/LinkedIn.astro";
+import MailIcon from "./icons/Mail.astro";
+import SocialPill from "./SocialPill.astro";
 ---
 
 <div class="max-w-xl">
@@ -25,15 +25,20 @@ import SocialPill from "../components/SocialPill.astro"
   <h1
     class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
   >
-    Hey, soy Guillermo Tapia
+    Hello, soy Guillermo Tapia
   </h1>
   <p
     class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
   >
-    +15 años de experiencia. <strong
-      >Ingeniero de Software y Creador de Contenido sobre Programación</strong
-    > de Barcelona, España 🇪🇸. Especializado en el desarrollo de aplicaciones web
-    únicas.
+    Soy desarrollador web con experiencia en <span class="react">React.js</span>
+    , <span class="angular">Angular.js</span> , <span class="tailwind"
+      >Tailwindcss</span
+    > y <span class="bootstrap">Bootstrap</span> en el Front-End, y <span
+      class="node">Node.js</span
+    >, <span class="express">Express.js</span> , <span class="server"
+      >SQL Server
+    </span> y <span class="mongo">MongoDB</span> en el Back-End. Me especializo en
+    la creación de aplicaciones dinámicas y eficientes.
   </p>
   <nav class="flex flex-wrap gap-4 mt-8">
     <SocialPill href="mailto:miduga@gmail.com">
@@ -46,3 +51,39 @@ import SocialPill from "../components/SocialPill.astro"
     </SocialPill>
   </nav>
 </div>
+
+<style>
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  .react {
+    @apply text-blue-500;
+  }
+
+  .angular {
+    @apply text-red-400;
+  }
+
+  .tailwind {
+    @apply text-blue-400;
+  }
+
+  .server {
+    @apply text-orange-300;
+  }
+  .bootstrap {
+    @apply text-purple-400;
+  }
+  .node {
+    @apply text-emerald-400;
+  }
+  .mongo {
+    @apply text-emerald-600;
+  }
+
+  .express {
+    @apply text-emerald-900;
+
+  }
+</style>
