@@ -19,20 +19,20 @@ const TAGS = {
 }
 const PROJECTS = [
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "Rent Car Website",
     description:
-      "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://svgl.vercel.app/",
-    github: "https://github.com/pheralb/svgl",
-    image: "/projects/svgl.webp",
+      "Plataforma para rentar autos. Creado desde cero con Vue.js y Tailwind CSS.",
+    link: "https://front-end-rent-cart-app.vercel.app/cars",
+    github: "https://github.com/GuillermoTD/Front-End-Rent-Cart-App",
+    image: "public/RentCar.png",
     tags: [TAGS.NEXT, TAGS.TAILWIND],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+    title: "Tesla Clone",
     description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
+      "Tesla Clone Webside. Creada desde cero con React.js y Tailwind CSS.",
+    link: "https://guillermoportfolio.netlify.app/",
+    image: "public/Tesla Landingpage-4582181b.png",
     tags: [TAGS.NEXT, TAGS.TAILWIND],
   },
 ]
@@ -54,7 +54,7 @@ const PROJECTS = [
       {title}
     </h3>
     <div class="flex flex-wrap mt-2">
-      <ul class="flex flex-row mb-2 gap-x-2">
+      {/* <ul class="flex flex-row mb-2 gap-x-2">
           {tags.map((tag) => (
             <li>
               <span
@@ -65,7 +65,7 @@ const PROJECTS = [
               </span>
             </li>
           ))}
-        </ul>
+        </ul> */}
 
       <div class="mt-2 text-gray-700 dark:text-gray-400">{description}</div>
       <footer class="flex items-end justify-start mt-4 gap-x-4">
@@ -89,7 +89,7 @@ const PROJECTS = [
     ))
   }
   <div class=" w-full flex justify-center mt-[2rem]">
-    <LinkButton class="cursor-pointer">
+    <LinkButton class="cursor-pointer" href="">
       Ver mas
     </LinkButton>
   </div>
