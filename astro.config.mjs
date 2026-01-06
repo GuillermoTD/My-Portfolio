@@ -8,6 +8,11 @@ export default defineConfig({
   alias: {
     '@': path.resolve('./src'),
   },
+  vite:{
+    build:{
+      sourcemap:true,
+    }
+  }
 });
 
 
